@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/code_py/ci-cd_tutorial/mlruns/162310968942869476/3b33c37ddd9b402a8de598e6347a851d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '162310968942869476'
+lifecycle_stage: active
+run_id: 3b33c37ddd9b402a8de598e6347a851d
+run_name: agreeable-elk-699
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790244339946
+status: 1
+tags: []
+user_id: user
