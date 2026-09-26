@@ -1,0 +1,42 @@
+name: Serie A MLOps Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build_and_train:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 0. Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 1. Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 2. Install Libraries
+        run: pip install requirements.txt
+
+      - name: 3. Run Data Ingestion
+        run: python src/ingest.py
+
+      - name: 4. Run Feature Engineering
+        run: python src/build_features.py
+
+      - name: 5. Train & Validate Champion Model
+        run: python src/train.py
+
+      - name: 6. Commit & Deploy
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "MLOps Bot"
+          git add data/
+          git add model/
+          git commit -m "Auto-retrained model [skip ci]" || exit 0
+          git push
