@@ -21,7 +21,7 @@ jobs:
           python-version: '3.10'
 
       - name: 2. Install Libraries
-        run: pip install requirements.txt
+        run: pip install fastapi
 
       - name: 3. Run Data Ingestion
         run: python src/ingest.py
