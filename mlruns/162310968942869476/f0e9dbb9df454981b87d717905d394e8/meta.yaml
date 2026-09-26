@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/code_py/ci-cd_tutorial/mlruns/162310968942869476/f0e9dbb9df454981b87d717905d394e8/artifacts
+end_time: 1790246937064
+entry_point_name: ''
+experiment_id: '162310968942869476'
+lifecycle_stage: active
+run_id: f0e9dbb9df454981b87d717905d394e8
+run_name: silent-shrike-217
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790246816827
+status: 3
+tags: []
+user_id: user

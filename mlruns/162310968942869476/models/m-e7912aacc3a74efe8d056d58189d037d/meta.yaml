@@ -1,11 +1,10 @@
 artifact_location: file:///C:/code_py/ci-cd_tutorial/mlruns/162310968942869476/models/m-e7912aacc3a74efe8d056d58189d037d/artifacts
 creation_timestamp: 1790244346073
 experiment_id: '162310968942869476'
-last_updated_timestamp: 1790244346073
-lifecycle_stage: active
+last_updated_timestamp: 1790244844009
 model_id: m-e7912aacc3a74efe8d056d58189d037d
 model_type: null
 name: SerieAresult_model
 source_run_id: 3b33c37ddd9b402a8de598e6347a851d
-status: 1
+status: 2
 status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/code_py/ci-cd_tutorial/mlruns/162310968942869476/499382a93b2447c082ed1465eec94785/artifacts
+end_time: 1790244882600
+entry_point_name: ''
+experiment_id: '162310968942869476'
+lifecycle_stage: active
+run_id: 499382a93b2447c082ed1465eec94785
+run_name: caring-toad-63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790244867857
+status: 4
+tags: []
+user_id: user

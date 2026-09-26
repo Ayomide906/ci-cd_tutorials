@@ -18,15 +18,13 @@ def update_training_data():
     df = pd.read_csv(raw_path)
 
     # 2. The "Dummy" Feature Engineering
-    # We do just enough to show the students that this script transforms data.
     print("Calculating simple match features...")
     df['HomeGoalDiff'] = df['FullTimeHomeGoals'] - df['FullTimeAwayGoals']
     
     # 3. Select a tiny subset of columns for the toy model
     feature_cols = [
         'HomeTeam', 'AwayTeam', 
-        'HomeOdds', 'DrawOdds', 'AwayOdds', 
-        'HomeGoalDiff'
+        'HomeOdds', 'DrawOdds', 'AwayOdds'
     ]
     target_cols = ['FullTimeResult']
 
